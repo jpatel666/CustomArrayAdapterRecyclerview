@@ -26,7 +26,7 @@ public class AppAdapter extends RecyclerView.Adapter<AppAdapter.MyClass>{   //4 
     @Override
     public AppAdapter.MyClass onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {   //parent
 
-         //___Any                                                                              //
+         //___Any                                                                        //
         View view = LayoutInflater.from(mainActivity).inflate(R.layout.app_item_layout,parent,false);
         MyClass myClass = new MyClass(view);
         return myClass;
