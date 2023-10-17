@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         //recyclerView.setLayoutManager(staggeredGridLayoutManager);
 
 
-
         AppAdapter appAdapter = new AppAdapter(MainActivity.this,appname,appicon);  //Alt+Enter
         recyclerView.setAdapter(appAdapter);
     }
