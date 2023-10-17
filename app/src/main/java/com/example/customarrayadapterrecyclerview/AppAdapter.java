@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class AppAdapter extends RecyclerView.Adapter<AppAdapter.MyClass>{   //4 Times Alt+Enter
 
-    // In RecyclerView:-extends RecyclerView.Adapter<AppAdapter.MyClass> {....}
+    //In RecyclerView:-extends RecyclerView.Adapter<AppAdapter.MyClass> {....}
 
     MainActivity mainActivity;
     String[] appname;                    //Short Cut ;
@@ -25,10 +25,10 @@ public class AppAdapter extends RecyclerView.Adapter<AppAdapter.MyClass>{   //4 
     }
 
     @NonNull
-    @Override
-    public AppAdapter.MyClass onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {   //parent
+    @Override                                                      //parent
+    public AppAdapter.MyClass onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-         //___Any                                                                        //
+        //View Create Self                                                               //
         View view = LayoutInflater.from(mainActivity).inflate(R.layout.app_item_layout,parent,false);
         MyClass myClass = new MyClass(view);
         return myClass;
