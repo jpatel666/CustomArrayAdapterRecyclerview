@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class AppAdapter extends RecyclerView.Adapter<AppAdapter.MyClass>{   //4 Times Alt+Enter
 
+    // In RecyclerView:-extends RecyclerView.Adapter<AppAdapter.MyClass> {....}
+
     MainActivity mainActivity;
     String[] appname;                    //Short Cut ;
     int[] appicon;
