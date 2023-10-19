@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -39,6 +40,13 @@ public class AppAdapter extends RecyclerView.Adapter<AppAdapter.MyClass>{   //4 
 
      holder.tvAppname.setText(appname[position]);
      holder.ivAppicon.setImageResource(appicon[position]);
+
+     holder.tvAppname.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+             Toast.makeText(mainActivity,appname[position], Toast.LENGTH_SHORT).show();
+         }
+     });
 
     }
 

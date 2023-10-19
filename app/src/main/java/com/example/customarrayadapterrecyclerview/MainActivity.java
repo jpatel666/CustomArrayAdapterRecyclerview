@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Types:-LinearLayoutManager,GridLayoutManager,StaggeredGridLayoutManager       (Horizontal & Vertical Set Any Place)
 
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity.this,RecyclerView.HORIZONTAL,false);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity.this,RecyclerView.VERTICAL,false);
         recyclerView.setLayoutManager(linearLayoutManager);
 
 
